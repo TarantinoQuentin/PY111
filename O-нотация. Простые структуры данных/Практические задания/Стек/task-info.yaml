@@ -1,0 +1,82 @@
+type: edu
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 276
+        length: 90
+        placeholder_text: "...  # TODO реализовать операцию push"
+        initial_state:
+          length: 37
+          offset: 263
+        initialized_from_dependency: false
+        encrypted_possible_answer: self._stack.append(elem)
+        selected: true
+        status: Solved
+      - offset: 571
+        length: 172
+        placeholder_text: "...  # TODO реализовать операцию pop"
+        initial_state:
+          length: 36
+          offset: 514
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          if not self._stack:
+                      raise IndexError("Извлечение из пустого стека не возможно")
+          
+                  return self._stack.pop()
+        selected: true
+        status: Solved
+      - offset: 1215
+        length: 227
+        placeholder_text: "...  # TODO реализовать операцию peek"
+        initial_state:
+          length: 37
+          offset: 1022
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          if not isinstance(ind, int):
+                      raise TypeError(f"Индекс должен быть целочисленного типа, а не {type(ind).__name__}")
+          
+                  if not 0 <= ind < len(self._stack):
+                      raise IndexError("Индекс все границ стека")
+          
+                  inv_ind = -1 - ind
+                  return self._stack[inv_ind]
+        selected: true
+        status: Solved
+      - offset: 1504
+        length: 85
+        placeholder_text: "...  # TODO реализовать операцию clear"
+        initial_state:
+          length: 38
+          offset: 1129
+        initialized_from_dependency: false
+        encrypted_possible_answer: self._stack.clear()
+        selected: true
+        status: Solved
+      - offset: 1675
+        length: 47
+        placeholder_text: "...  # TODO реализовать операцию __len__"
+        initial_state:
+          length: 40
+          offset: 1253
+        initialized_from_dependency: false
+        encrypted_possible_answer: return len(self._stack)
+        selected: true
+        status: Solved
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 18 Dec 2025 16:58:18 UTC"
+record: -1
