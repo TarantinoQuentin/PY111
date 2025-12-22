@@ -3,66 +3,66 @@ files:
   - name: task.py
     visible: true
     placeholders:
-      - offset: 204
-        length: 35
+      - offset: 220
+        length: 53
         placeholder_text: "...  # TODO инициализировать список"
         initial_state:
           length: 35
           offset: 204
         initialized_from_dependency: false
         encrypted_possible_answer: '...'
-        selected: false
-        status: Unchecked
-      - offset: 418
-        length: 37
+        selected: true
+        status: Solved
+      - offset: 452
+        length: 59
         placeholder_text: "...  # TODO реализовать метод enqueue"
         initial_state:
           length: 37
           offset: 418
         initialized_from_dependency: false
         encrypted_possible_answer: '...'
-        selected: false
-        status: Unchecked
-      - offset: 679
-        length: 37
+        selected: true
+        status: Solved
+      - offset: 735
+        length: 155
         placeholder_text: "...  # TODO реализовать метод dequeue"
         initial_state:
           length: 37
           offset: 679
         initialized_from_dependency: false
         encrypted_possible_answer: '...'
-        selected: false
-        status: Unchecked
-      - offset: 1198
-        length: 34
+        selected: true
+        status: Solved
+      - offset: 1372
+        length: 260
         placeholder_text: "...  # TODO реализовать метод peek"
         initial_state:
           length: 34
           offset: 1198
         initialized_from_dependency: false
         encrypted_possible_answer: '...'
-        selected: false
-        status: Unchecked
-      - offset: 1304
-        length: 35
+        selected: true
+        status: Solved
+      - offset: 1704
+        length: 52
         placeholder_text: "...  # TODO реализовать метод clear"
         initial_state:
           length: 35
           offset: 1304
         initialized_from_dependency: false
         encrypted_possible_answer: '...'
-        selected: false
-        status: Unchecked
-      - offset: 1420
-        length: 37
+        selected: true
+        status: Solved
+      - offset: 1837
+        length: 130
         placeholder_text: "...  # TODO реализовать метод __len__"
         initial_state:
           length: 37
           offset: 1420
         initialized_from_dependency: false
         encrypted_possible_answer: '...'
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -73,6 +73,9 @@ files:
   - name: tests/__init__.py
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 22 Dec 2025 12:38:25 UTC"
 record: -1
 solution_hidden: false
