@@ -13,7 +13,7 @@ class Queue:
         # инициализировать список
         self.queue = []
 
-    def enqueue(self, elem: Any) -> None:
+    def enqueue(self, elem: Any) -> None:  # O(I)
         """
         Добавление элемент в конец очереди
 
@@ -22,7 +22,7 @@ class Queue:
         # реализовать метод enqueue
         self.queue.append(elem)
 
-    def dequeue(self) -> Any:
+    def dequeue(self) -> Any:  # O(I)
         """
         Извлечение элемента из начала очереди.
 
@@ -36,7 +36,7 @@ class Queue:
         else:
             raise IndexError('Ошибка, очередь пуста')
 
-    def peek(self, ind: int = 0) -> Any:
+    def peek(self, ind: int = 0) -> Any:  # O(I)
         """
         Просмотр произвольного элемента, находящегося в очереди, без его извлечения.
 
@@ -54,12 +54,12 @@ class Queue:
             raise IndexError('Индекс вне границ очереди')
         return self.queue[ind]
 
-    def clear(self) -> None:
+    def clear(self) -> None:  # O(I)
         """ Очистка очереди. """
         # реализовать метод clear
         self.queue.clear()
 
-    def __len__(self):
+    def __len__(self):  # O(N)
         """ Количество элементов в очереди. """
         # реализовать метод __len__
         total_len = 0
