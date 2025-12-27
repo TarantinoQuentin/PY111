@@ -3,8 +3,8 @@ files:
   - name: task.py
     visible: true
     placeholders:
-      - offset: 86
-        length: 3
+      - offset: 81
+        length: 815
         placeholder_text: '...'
         initial_state:
           length: 3
@@ -15,8 +15,8 @@ files:
               for idx, val in enumerate(nums):
                   if dict_.get(val) and not dict_[val] == idx:
                       return [dict_[val], idx]
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -27,5 +27,11 @@ files:
   - name: tests/__init__.py
     visible: false
     learner_created: false
-status: Unchecked
+  - name: calc_logic.py
+    visible: true
+    learner_created: true
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 27 Dec 2025 10:50:47 UTC"
 record: -1
