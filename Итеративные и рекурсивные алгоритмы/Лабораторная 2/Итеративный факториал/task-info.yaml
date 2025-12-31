@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 203
-        length: 396
+        length: 394
         placeholder_text: "...  # TODO реализовать итеративный алгоритм нахождения фак\
       ториала"
         initial_state:
@@ -28,6 +28,9 @@ files:
     visible: true
     is_binary: true
     learner_created: false
+  - name: qqq.py
+    visible: true
+    learner_created: true
 status: Solved
 feedback:
   message: Congratulations!
