@@ -3,8 +3,8 @@ files:
   - name: task.py
     visible: true
     placeholders:
-      - offset: 81
-        length: 3
+      - offset: 106
+        length: 1323
         placeholder_text: '...'
         initial_state:
           length: 3
@@ -32,8 +32,8 @@ files:
                       else:
                           r -= 1
               return result
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Failed
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -44,5 +44,10 @@ files:
   - name: tests/__init__.py
     visible: false
     learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: "Lists differ: [[-1, 0, 1], [-1, 2, -1]] != [[-1, -1, 2], [-1, 0, 1]]"
+  time: "Sun, 18 Jan 2026 10:38:01 UTC"
+  expected: "[[-1, 0, 1], [-1, 2, -1]]"
+  actual: "[[-1, -1, 2], [-1, 0, 1]]"
 record: -1

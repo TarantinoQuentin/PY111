@@ -4,15 +4,15 @@ files:
     visible: true
     placeholders:
       - offset: 486
-        length: 54
+        length: 424
         placeholder_text: "...  # TODO реализовать алгоритм сортировки подсчетами"
         initial_state:
           length: 54
           offset: 486
         initialized_from_dependency: false
         encrypted_possible_answer: '...'
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -27,5 +27,11 @@ files:
     visible: true
     is_binary: true
     learner_created: false
-status: Unchecked
+  - name: aa.py
+    visible: true
+    learner_created: true
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 17 Jan 2026 11:31:03 UTC"
 record: -1
