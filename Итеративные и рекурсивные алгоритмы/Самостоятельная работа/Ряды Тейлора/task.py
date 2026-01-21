@@ -14,31 +14,36 @@ def sinx(x: Union[int, float]) -> float:
     :return: значение sin(x)
     """
     # вычислить sin(x) с помощью разложения сумму бесконечного ряда
-    #     n = 0
-    #     sinx_result = 0
-    #     while True:
-    #         step_action = pow(-1, n) * pow(x, 2 * n + 1) / factorial(2 * n + 1)
-    #         sinx_result += step_action
-    #         n += 1
+
+    # n = 0
+    # sinx_result = 0
+    # while True:
+    #     step_action = pow(-1, n) * pow(x, 2 * n + 1) / factorial(2 * n + 1)
+    #     sinx_result += step_action
+    #     n += 1
     #
-    #         if abs(step_action) <= DELTA:
-    #             return sinx_result
+    #     if abs(step_action) <= DELTA:
+    #         return sinx_result
+
+    # Альтернативное решение без использования функций factorial,
+    # pow и оператора **:
+
     n = 0
-    pow_term = -1
-    second_pow_term = x
-    factorial_term = 2 * n + 1
-    sinx_result = 0
+    sin_x = 0
     while True:
-        for _ in range(n):
-            pow_term *= pow_term
-        for _ in range(2 * n + 1):
-            second_pow_term *= second_pow_term
-        for i in range(1, factorial_term):
+        eulers_key_term = 2 * n + 1
+        sign_term = -1 if (n + 1) % 2 == 0 else 1
+        pow_term = 1
+        factorial_term = 1
+
+        for i in range(1, eulers_key_term + 1):
+            pow_term *= x
             factorial_term *= i
 
-        step_action = pow_term * second_pow_term / factorial_term
-        sinx_result += step_action
-        n += 1
+        step_action = sign_term * pow_term / factorial_term
+        sin_x += step_action
 
         if abs(step_action) <= DELTA:
-            return sinx_result
+                return sin_x
+
+        n += 1
