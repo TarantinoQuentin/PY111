@@ -9,7 +9,21 @@ def stairway_path(count_stairs: int) -> List[int]:
     :param count_stairs: Количество ступеней
     :return: Количество маршрутов до каждой ступени
     """
-    ...  # TODO найти количество маршрутов до каждой ступени
+    # найти количество маршрутов до каждой ступени
+    if count_stairs < 0:
+        raise ValueError
+    if count_stairs == 0:
+        return [0]
+    if count_stairs == 1:
+        return [0, 1]
+
+    path = [0] * (count_stairs + 1)
+    path[1] = 1
+
+    for i in range(2, count_stairs + 1):
+        path[i] = path[i - 1] + path[i - 2]
+
+    return path
 
 
 if __name__ == '__main__':

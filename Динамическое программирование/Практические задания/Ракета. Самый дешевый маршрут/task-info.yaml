@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 355
-        length: 53
+        length: 467
         placeholder_text: "...  # TODO рассчитать таблицу стоимостей перемещений"
         initial_state:
           length: 53
@@ -27,8 +27,8 @@ files:
                       table[i][j] += min(table[i - 1][j], table[i][j - 1])
           
               return table
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -43,5 +43,8 @@ files:
     visible: true
     is_binary: true
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 25 Jan 2026 16:08:31 UTC"
 record: -1

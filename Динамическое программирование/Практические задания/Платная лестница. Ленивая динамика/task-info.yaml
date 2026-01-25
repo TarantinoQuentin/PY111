@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 481
-        length: 40
+        length: 293
         placeholder_text: "...  # TODO реализовать ленивую динамику"
         initial_state:
           length: 40
@@ -20,8 +20,8 @@ files:
                                            lazy_method(stairway, n - 2))
           
               return lazy_method(stairway, len(stairway)-1)
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -32,5 +32,8 @@ files:
   - name: tests/__init__.py
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 25 Jan 2026 15:42:58 UTC"
 record: -1
