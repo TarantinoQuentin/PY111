@@ -3,8 +3,8 @@ files:
   - name: task.py
     visible: true
     placeholders:
-      - offset: 458
-        length: 1227
+      - offset: 26
+        length: 1659
         placeholder_text: "...  # TODO реализуйте сортировку слиянием"
         initial_state:
           length: 42

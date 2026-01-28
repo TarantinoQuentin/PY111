@@ -3,8 +3,8 @@ files:
   - name: task.py
     visible: true
     placeholders:
-      - offset: 74
-        length: 3
+      - offset: 1732
+        length: 242
         placeholder_text: '...'
         initial_state:
           length: 3
@@ -17,10 +17,10 @@ files:
                       j += 1
                   i += 1
               return j == len(b)
-        selected: false
-        status: Unchecked
-      - offset: 129
-        length: 3
+        selected: true
+        status: Solved
+      - offset: 2022
+        length: 442
         placeholder_text: '...'
         initial_state:
           length: 3
@@ -39,8 +39,8 @@ files:
                   if flag:
                       return len(s)
               return -1
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -51,5 +51,8 @@ files:
   - name: tests/__init__.py
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 28 Jan 2026 19:45:02 UTC"
 record: -1

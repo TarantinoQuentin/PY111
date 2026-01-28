@@ -37,4 +37,4 @@ def calculate_paths(shape: Tuple[int, int]) -> int:
 
 if __name__ == '__main__':
     print(calculate_paths((4, 4)))  # 2
-    # print(calculate_paths((7, 15)))  # 13309
+    print(calculate_paths((7, 15)))  # 13309
