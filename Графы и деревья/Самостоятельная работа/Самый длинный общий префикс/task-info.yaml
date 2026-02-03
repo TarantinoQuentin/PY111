@@ -3,8 +3,8 @@ files:
   - name: task.py
     visible: true
     placeholders:
-      - offset: 81
-        length: 3
+      - offset: 122
+        length: 1888
         placeholder_text: '...'
         initial_state:
           length: 3
@@ -24,8 +24,8 @@ files:
                   else:
                       break
               return prefix
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -36,5 +36,11 @@ files:
   - name: tests/__init__.py
     visible: false
     learner_created: false
-status: Unchecked
+  - name: aaa.py
+    visible: true
+    learner_created: true
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 03 Feb 2026 17:33:06 UTC"
 record: -1

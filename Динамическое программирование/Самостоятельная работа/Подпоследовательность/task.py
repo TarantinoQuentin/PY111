@@ -20,5 +20,5 @@ def is_subsequence(s: str, t: str) -> bool:
     # return i == len(s)
 
     # Решение из интернета:
-    # it = iter(b)
-    # return all(char in it for char in a)
+    # it = iter(t)
+    # return all(char in it for char in s)

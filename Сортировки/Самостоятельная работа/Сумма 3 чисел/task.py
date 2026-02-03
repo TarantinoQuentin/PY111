@@ -22,6 +22,7 @@ def three_sum(nums: List[int]) -> List[List[int]]:
     # result = [list(batch) for batch in batched(result, 3)]
     # return result
 
+
 # Решение учителя:
     nums.sort()
     result = []

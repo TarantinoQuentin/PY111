@@ -3,8 +3,8 @@ files:
   - name: task.py
     visible: true
     placeholders:
-      - offset: 94
-        length: 3
+      - offset: 91
+        length: 1057
         placeholder_text: '...'
         initial_state:
           length: 3
@@ -34,8 +34,8 @@ files:
                           break
           
               return " ".join(words)
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -46,5 +46,8 @@ files:
   - name: tests/__init__.py
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 03 Feb 2026 19:04:17 UTC"
 record: -1

@@ -3,8 +3,8 @@ files:
   - name: task.py
     visible: true
     placeholders:
-      - offset: 693
-        length: 82
+      - offset: 776
+        length: 982
         placeholder_text: "...  # TODO вернуть стоимость путей до всех вершин посчитан\
       ных алгоритмом Дейкстры"
         initial_state:
@@ -18,10 +18,10 @@ files:
                       coasts[node] = float("inf")
           
               return coasts
-        selected: false
-        status: Unchecked
-      - offset: 809
-        length: 25
+        selected: true
+        status: Solved
+      - offset: 1792
+        length: 258
         placeholder_text: "...  # TODO записать граф"
         initial_state:
           length: 25
@@ -40,8 +40,8 @@ files:
                   (4, 5, 6),
                   (5, 6, 9),
               ])
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -56,5 +56,8 @@ files:
     visible: true
     is_binary: true
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 31 Jan 2026 12:56:46 UTC"
 record: -1

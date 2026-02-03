@@ -7,7 +7,7 @@ files:
     visible: true
     placeholders:
       - offset: 562
-        length: 60
+        length: 472
         placeholder_text: "...  # TODO реализовать обход в глубину итеративным способо\
       м"
         initial_state:
@@ -30,8 +30,8 @@ files:
                           visited[neighbor] = True
           
               return path
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: tests/__init__.py
     visible: false
@@ -39,5 +39,8 @@ files:
   - name: tests/test_task.py
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 01 Feb 2026 08:06:17 UTC"
 record: -1

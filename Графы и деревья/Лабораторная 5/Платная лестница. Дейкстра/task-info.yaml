@@ -3,8 +3,8 @@ files:
   - name: task.py
     visible: true
     placeholders:
-      - offset: 451
-        length: 103
+      - offset: 464
+        length: 913
         placeholder_text: "...  # TODO c помощью функции из модуля networkx найти стои\
       мость кратчайшего пути до последней лестницы"
         initial_state:
@@ -12,10 +12,10 @@ files:
           offset: 451
         initialized_from_dependency: false
         encrypted_possible_answer: '...'
-        selected: false
-        status: Unchecked
-      - offset: 657
-        length: 108
+        selected: true
+        status: Solved
+      - offset: 1933
+        length: 105
         placeholder_text: "...  # TODO записать взвешенный граф, а лучше написать функ\
       цию, которая формирует граф по стоимости ступеней"
         initial_state:
@@ -23,8 +23,8 @@ files:
           offset: 657
         initialized_from_dependency: false
         encrypted_possible_answer: '...'
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -39,5 +39,8 @@ files:
     visible: true
     is_binary: true
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 02 Feb 2026 17:19:22 UTC"
 record: -1

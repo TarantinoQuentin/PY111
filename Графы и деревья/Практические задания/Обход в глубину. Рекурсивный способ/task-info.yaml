@@ -3,8 +3,8 @@ files:
   - name: task.py
     visible: true
     placeholders:
-      - offset: 531
-        length: 39
+      - offset: 559
+        length: 771
         placeholder_text: "...  # TODO реализовать обход в глубину"
         initial_state:
           length: 39
@@ -24,8 +24,8 @@ files:
               recursion_dfs(start_node)
           
               return path
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -40,5 +40,8 @@ files:
     visible: true
     is_binary: true
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 31 Jan 2026 11:11:32 UTC"
 record: -1

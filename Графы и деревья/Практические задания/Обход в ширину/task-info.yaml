@@ -9,8 +9,8 @@ files:
   - name: task.py
     visible: true
     placeholders:
-      - offset: 561
-        length: 38
+      - offset: 626
+        length: 487
         placeholder_text: "...  # TODO реализовать обход в ширину"
         initial_state:
           length: 38
@@ -32,10 +32,10 @@ files:
                           visited[neighbor] = True  # если узел "подожжен", то мы его посещали
           
               return path
-        selected: false
-        status: Unchecked
-      - offset: 633
-        length: 72
+        selected: true
+        status: Solved
+      - offset: 1147
+        length: 499
         placeholder_text: "# TODO записать граф с помощью модуля networkx и прверить о\
       бход в ширину"
         initial_state:
@@ -62,8 +62,8 @@ files:
               ])
           
               print(bfs(graph, "A"))
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: tests/__init__.py
     visible: false
@@ -72,5 +72,8 @@ files:
     visible: true
     is_binary: true
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 31 Jan 2026 10:36:53 UTC"
 record: -1
